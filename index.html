@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="program calculates area and circumference of circle">
+    <meta name="keywords" content="math, circle">
+    <meta name="author" content="sean mcleod">
+    <title>Area of Circle Calculator</title>
+  </head>
+  <body>
+    <h1>Circle Calculator</h1>
+    <input type="text" id="bottle">
+    <button onclick="myfunction()">Calculate</button>
+    <p id="dry">This site will calculate the area and the circumference of your circle. Enjoy!</p>
+    <p><b>Enter the diameter of the circle to figure out the area and the circumference</b></p>
+    <img src="./images/circle.jpg" alt="image of a circle">
+    <script>
+      function myfunction() {
+      document.getElementById("dry").style.color="rgb(181, 155, 214)";
+      let diameter
+      let circleArea
+      let circumference
+      diameter=document.getElementById("bottle").value;
+      circleArea= 3.141592653589793*diameter/2*diameter/2;
+      circumference= 2*3.141592653589793*diameter/2;
+      alert("The area of the circle is "+ circleArea );
+      alert("The circumference of the circle is "+ circumference);
+      }
+    </script>
+  </body>
+</html>
